@@ -1,0 +1,41 @@
+<<<<<<< mine
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DrawLine.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ohhiGameBoard.cs" Line="13" Column="25" />
+      <File FileName="Assets/Scripts/ohhiSquare.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="34" Column="49" />
+      <File FileName="Assets/Scripts/DrawLine.cs" Line="31" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts" expanded="True">
+              <Node name="DrawLine.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+=======
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SudokuGenerator.cs">
+    <Files>
+      <File FileName="Assets\Scripts\SudokuGenerator.cs" Line="79" Column="12" />
+      <File FileName="Assets\Scripts\SudokuSquare.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+>>>>>>> theirs
+</Properties>

@@ -1,0 +1,40 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Cell : MonoBehaviour
+{
+
+		public int sudValue;
+		public bool playable = false;
+		public bool showSudValue;
+
+
+<<<<<<< mine
+	void Start () {
+	}
+=======
+		// Use this for initialization
+		void Start ()
+		{
+//		if (playable) {
+//			showSudValue = false;
+//		}
+
+
+	
+		}
+>>>>>>> theirs
+	
+<<<<<<< mine
+	void Update () {
+//	Debug.Log ("my Sudvalue is " + sudValue);
+	}
+=======
+		// Update is called once per frame
+		void Update ()
+		{
+				//Debug.Log ("my Sudvalue is " + sudValue);
+	
+		}
+>>>>>>> theirs
+}

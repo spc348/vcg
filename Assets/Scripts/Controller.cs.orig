@@ -1,0 +1,116 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Controller : MonoBehaviour {
+
+    public Hand_Controller handController;
+    public ohhiGameBoard ohhiGameBoard;
+    public SudokuGenerator sudokuController;
+    string mode;
+    int player;
+    public string left, right, up, down, yes, no;
+
+	// Use this for initialization
+	void Start () {
+       
+        
+        mode = "vc";
+
+	}
+	
+	// Update is called once per frame
+	void Ohhi_Movement () {
+		if (Input.GetKeyDown(right)) {
+			if (ohhiGameBoard.highlightedSquare < 16) {
+				ohhiGameBoard.highlightedSquare++;
+			}
+		}
+
+		if (Input.GetKeyDown(left)) {
+			if (ohhiGameBoard.highlightedSquare > 1) {
+				ohhiGameBoard.highlightedSquare--;
+			}
+		}
+
+		if (Input.GetKeyDown(up)) {
+			if (ohhiGameBoard.highlightedSquare - 4 >= 1) {
+				ohhiGameBoard.highlightedSquare -= 4;
+			}
+		}
+		
+		if (Input.GetKeyDown(down)) {
+			if (ohhiGameBoard.highlightedSquare + 4 <= 16) {
+				ohhiGameBoard.highlightedSquare+=4;
+			}
+		}
+	}
+
+    void Sudoku_Movement() { 
+	
+	
+	}
+
+    void Hand_Movement()
+    {
+        if (Input.GetKeyDown(right))
+        {
+            if (handController.highlightedSquare < 5)
+            {
+                handController.highlightedSquare++;
+            }
+        }
+
+        if (Input.GetKeyDown(left))
+        {
+            if (handController.highlightedSquare > 1)
+            {
+                handController.highlightedSquare--;
+            }
+        }
+        if (Input.GetKeyDown(yes))
+        {
+            mode = "ohh1";
+        } 
+        if (Input.GetKeyDown(no))
+        {
+            mode = "sudoku";
+        }
+    }
+
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.V)) 
+        {
+            mode = "vc";
+        }
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            mode = "ohh1";
+        }
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            mode = "hand";
+        }
+
+        switch (mode)
+        {
+            case "vc":
+                //thing
+                break;
+            case "sudoku":
+                //moving in sudoku board
+                break;
+            case "ohh1":
+                Ohhi_Movement();
+                break;
+            case "hand":
+                Hand_Movement();
+                break;
+            default:
+                break;
+        }
+
+        Debug.Log(mode);
+    }
+}
